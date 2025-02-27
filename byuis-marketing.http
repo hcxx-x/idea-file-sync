@@ -1,0 +1,257 @@
+###
+GET http://localhost:8014/activity/redPack/terminal/aiShelfRecognition?
+    shelfImgUrl=https://tuku-cos-1256054528.picbj.myqcloud.com/2021/11/6cc0dad5ce9f0be-1536x1152.jpg
+
+<> 2025-02-24T095920.404.json
+<> 2025-02-21T162141.200.json
+<> 2025-02-21T161853.200.json
+
+###
+POST http://localhost:8014/activity/terminal/rewards/page/queryRedPack
+x-user-id: 1
+x-tenant-code:11
+Content-Type: application/json
+
+{
+  "size": 10,
+  "current": 1,
+  "received": "N"
+}
+
+<> 2025-02-24T135925.200.json
+<> 2025-02-24T135732.200.json
+<> 2025-02-24T135708.200.json
+<> 2025-02-24T135444.200.json
+<> 2025-02-24T134833.200.json
+<> 2025-02-24T134821.200.json
+<> 2025-02-24T134808.200.json
+<> 2025-02-24T134635.200.json
+<> 2025-02-24T134608.200.json
+<> 2025-02-24T133926.200.json
+<> 2025-02-24T095926.200.json
+<> 2025-02-24T095654.200.json
+<> 2025-02-24T095509.200.json
+<> 2025-02-24T095257.200.json
+<> 2025-02-24T095143.200.json
+<> 2025-02-24T095007.200.json
+<> 2025-02-24T094926.200.json
+
+###
+POST http://localhost:8014/activity/terminal/rewards/unPayRedPackSummary
+Content-Type: application/json
+x-user-id: 1869935493160943617
+
+{
+  "date": "",
+  "status": ""
+}
+
+<> 2025-02-25T140812.200.json
+<> 2025-02-24T145550.200.json
+<> 2025-02-24T145036.200.json
+<> 2025-02-24T144913.200.json
+<> 2025-02-24T144729.200.json
+<> 2025-02-24T142534.200.json
+<> 2025-02-24T142510.200.json
+
+###
+GET http://localhost:8014/common/user/redPack/confirmCollectRedPack?
+    lotteryUserPrizeId=100727
+x-user-id: 1871440854028124162
+x-user-type: consumer
+
+
+<> 2025-02-27T141000.200.json
+<> 2025-02-27T140931.404.json
+<> 2025-02-26T170350.200.json
+<> 2025-02-26T165753.200.json
+<> 2025-02-26T163401.200.json
+<> 2025-02-26T163236.200.json
+<> 2025-02-26T162205.200.json
+<> 2025-02-24T161808.200.json
+<> 2025-02-24T161729.200.json
+<> 2025-02-24T161241.200.json
+<> 2025-02-24T161048.200.json
+<> 2025-02-24T154848.200.json
+<> 2025-02-24T154019.200.json
+<> 2025-02-24T153757.200.json
+<> 2025-02-24T152823.200.json
+
+
+
+# curl 'https://test-byuis.baiyaodajiankang.com/gw-marketing/activity/consumer/receive/coupon'
+#  -H 'Connection: keep-alive'
+#  -H 'x-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRDb2RlIjoiMTAwMDIiLCJpZCI6IjE4NzE0NDA4NTQwMjgxMjQxNjIiLCJ1c2VyVHlwZSI6ImNvbnN1bWVyIiwiZXhwIjoxNzQwNTU4NzMxfQ.O8WYMKN9eLL4i7QtB6edGVpYbgnYkd4Qvz3vmoP2MHM'
+#  -H 'oenc: 1e1b680ced48354c852fab3a0a6c65d968fc1252fdd32476d2af3c10d9aba7855d37fc531afe0589a4b167780c7fb26f'
+#  -H 'x-c-version: 1.0.0'
+#  -H 'v: v2'
+#  -H 'uid: o2zxB5pC5x14s1DskQQb6lLIqbUA'
+#  -H 'x-sign: Yjk3N2Q5OTIxNTRjNTgzNTAwMDBiMDFiNDBjNDA1NzQ2NjJkZmFiNTJmOTVlNDc1ZGJiM2EwYTQyOWQ5M2I2MDA4MmRiMDc1OTEyZDFmNjJjOGY5MjljZDJkOWJmM2NkMWEwYmMyZmNlMmVkNzIwYTZmZmY5NTA0MWRjODFmOGMyOTE2NjAzODQwOTQ5YTk2OTllOGJjZjY3Y2E4NjJmNDZjZTI0NzI1MmU3OTcwZDIwMzRlMGQ5ZTZjMjZjYzIzODczNGFhZGU0MzhkNzFiMmQ5OTc5NWUyNzZjOWRkNDM='
+#  -H 'x-access-key: b3Blbl9lZ28='
+#  -H 'oid: osZbM4tRhmejPr1Whv8C6m-jRmgo'
+#  -H 'x-tenant-code: 10002'
+#  -H 'x-p-version: 1.0.1'
+#  -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2402030 MicroMessenger/8.0.5 Language/zh_CN webview/'
+#  -H 'tenantId: 566622'
+#  -H 'content-type: application/json;charset=UTF-8'
+#  -H 'x-timestamp: 1740472344413'
+#  -H 'x-nonce: jHr3lMFTxz3eudXDhTow'
+#  -H 'token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoiMTY3Mzg4NDEwODQ4NjkzMDU2NiIsInRlbmFudENvZGUiOiI1NjY2MjIiLCJhcHBsaWNhdGlvbklkIjoiODIwIiwiZXhwIjoxNzQyMzE1Njc0LCJ1c2VySWQiOiI5Nzc1NjcifQ.YmOhH0xtjuMnIhc3SeSCRbhdMC_TS7SrdRKa8sa0GHY'
+#  -H 'Accept: */*'
+#  -H 'Sec-Fetch-Site: cross-site'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Referer: https://servicewechat.com/wx6a6f3cc4740c1652/devtools/page-frame.html'
+#  --data-binary '{"activityId":"1875014204193263619","lat":31.8512,"lot":117.26061,"sbiCode":"mpwTOWdjHpj8b53fae7y"}'
+#  --compressed
+# POST https://test-byuis.baiyaodajiankang.com/gw-marketing/activity/consumer/receive/coupon
+###
+#@timeout=600000
+POST http://localhost:8014/activity/consumer/receive/coupon
+Connection: keep-alive
+x-user-type: consumer
+x-user-id: 1824314633905811457
+x-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRDb2RlIjoiMTAwMDIiLCJpZCI6IjE4NzE0NDA4NTQwMjgxMjQxNjIiLCJ1c2VyVHlwZSI6ImNvbnN1bWVyIiwiZXhwIjoxNzQwNTU4NzMxfQ.O8WYMKN9eLL4i7QtB6edGVpYbgnYkd4Qvz3vmoP2MHM
+oenc: 1e1b680ced48354c852fab3a0a6c65d968fc1252fdd32476d2af3c10d9aba7855d37fc531afe0589a4b167780c7fb26f
+x-c-version: 1.0.0
+v: v2
+uid: o2zxB5pC5x14s1DskQQb6lLIqbUA
+x-sign: Yjk3N2Q5OTIxNTRjNTgzNTAwMDBiMDFiNDBjNDA1NzQ2NjJkZmFiNTJmOTVlNDc1ZGJiM2EwYTQyOWQ5M2I2MDA4MmRiMDc1OTEyZDFmNjJjOGY5MjljZDJkOWJmM2NkMWEwYmMyZmNlMmVkNzIwYTZmZmY5NTA0MWRjODFmOGMyOTE2NjAzODQwOTQ5YTk2OTllOGJjZjY3Y2E4NjJmNDZjZTI0NzI1MmU3OTcwZDIwMzRlMGQ5ZTZjMjZjYzIzODczNGFhZGU0MzhkNzFiMmQ5OTc5NWUyNzZjOWRkNDM=
+x-access-key: b3Blbl9lZ28=
+oid: osZbM4tRhmejPr1Whv8C6m-jRmgo
+x-tenant-code: 10002
+x-p-version: 1.0.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2402030 MicroMessenger/8.0.5 Language/zh_CN webview/
+tenantId: 566622
+x-timestamp: 1740472344413
+x-nonce: jHr3lMFTxz3eudXDhTow
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoiMTY3Mzg4NDEwODQ4NjkzMDU2NiIsInRlbmFudENvZGUiOiI1NjY2MjIiLCJhcHBsaWNhdGlvbklkIjoiODIwIiwiZXhwIjoxNzQyMzE1Njc0LCJ1c2VySWQiOiI5Nzc1NjcifQ.YmOhH0xtjuMnIhc3SeSCRbhdMC_TS7SrdRKa8sa0GHY
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://servicewechat.com/wx6a6f3cc4740c1652/devtools/page-frame.html
+Content-Type: application/json;charset=UTF-8
+
+{"activityId":"1875014204193263619","lat":31.8512,"lot":117.26061,"sbiCode":"mpwTOWdjHpj8b53fae7y"}
+
+<> 2025-02-25T165114.200.json
+<> 2025-02-25T164256.200.json
+<> 2025-02-25T163815.200.json
+<> 2025-02-25T163647.200.json
+<> 2025-02-25T163637.200.json
+<> 2025-02-25T163546.200.json
+
+###
+# curl 'https://test-byuis.baiyaodajiankang.com/gw-marketing/activity/consumer/receive/coupon'
+#  -H 'Connection: keep-alive'
+#  -H 'x-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRDb2RlIjoiMTAwMDIiLCJpZCI6IjE4NzQ2MzU4NTM3MjkzNjYwMTciLCJ1c2VyVHlwZSI6ImNvbnN1bWVyIiwiZXhwIjoxNzQwNTU5OTEyfQ.WH-qmCofSz8UxyA9gPtxDmVnuNn59sZosIBLME5Tq68'
+#  -H 'oenc: 1e1b680ced48354c852fab3a0a6c65d968fc1252fdd32476d2af3c10d9aba785a1e0087c1404f21575ffcee247b805b7'
+#  -H 'x-c-version: 1.0.0'
+#  -H 'v: v2'
+#  -H 'uid: o2zxB5pC5x14s1DskQQb6lLIqbUA'
+#  -H 'x-sign: MDA1OTI2NTRkYjU1NDEzMmYwMGI3NDQ3ZjU1OTA3MmQ0ZGFiNDEyMTQwOTgyYjIyZmRkYjY4NjRkZmVkZThjZjJlMTUxMGFjNDkyMzFkYTUwYzNhMWY4MGUyN2FhMjBjYmI2YmNkNDM5NTAwYjBlMmJlYTg2NGM3YjFkOGJmNDRjOGM1MzcwMTIwNWQ1Y2NjMWNiNzc2NTg1NzljM2VmYjdlNGQ1MTcyNWUyNzUwNzEzYWFkMGY4MzY1MTE4YmRmMDM1MWM1MzVmMWVkNmQ4ZTA2NWJhNDM1ZWQ2OTc2Zjg='
+#  -H 'x-access-key: b3Blbl9lZ28='
+#  -H 'oid: osZbM4tRhmejPr1Whv8C6m-jRmgo'
+#  -H 'x-tenant-code: 10002'
+#  -H 'x-p-version: 1.0.1'
+#  -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2402030 MicroMessenger/8.0.5 Language/zh_CN webview/'
+#  -H 'tenantId: 566622'
+#  -H 'content-type: application/json;charset=UTF-8'
+#  -H 'x-timestamp: 1740473513395'
+#  -H 'x-nonce: GlrBCXFsWBSbtGHE0wtC'
+#  -H 'token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoiMTY3Mzg4NDEwODQ4NjkzMDU2NiIsInRlbmFudENvZGUiOiI1NjY2MjIiLCJhcHBsaWNhdGlvbklkIjoiODIwIiwiZXhwIjoxNzQyMzE1Njc0LCJ1c2VySWQiOiI5Nzc1NjcifQ.YmOhH0xtjuMnIhc3SeSCRbhdMC_TS7SrdRKa8sa0GHY'
+#  -H 'Accept: */*'
+#  -H 'Sec-Fetch-Site: cross-site'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Referer: https://servicewechat.com/wxbbce232a49295d75/devtools/page-frame.html'
+#  --data-binary '{"activityId":"1875014204193263619","lat":31.8512,"lot":117.26061,"sbiCode":"mpwTOWdjHpj8b53fae7y"}'
+#  --compressed
+@timeout=600000
+POST http://localhost:8014/activity/consumer/receive/coupon
+x-user-type: consumer
+x-user-id: 1824314633905811457
+Connection: keep-alive
+x-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRDb2RlIjoiMTAwMDIiLCJpZCI6IjE4NzQ2MzU4NTM3MjkzNjYwMTciLCJ1c2VyVHlwZSI6ImNvbnN1bWVyIiwiZXhwIjoxNzQwNTU5OTEyfQ.WH-qmCofSz8UxyA9gPtxDmVnuNn59sZosIBLME5Tq68
+oenc: 1e1b680ced48354c852fab3a0a6c65d968fc1252fdd32476d2af3c10d9aba785a1e0087c1404f21575ffcee247b805b7
+x-c-version: 1.0.0
+v: v2
+uid: o2zxB5pC5x14s1DskQQb6lLIqbUA
+x-sign: MDA1OTI2NTRkYjU1NDEzMmYwMGI3NDQ3ZjU1OTA3MmQ0ZGFiNDEyMTQwOTgyYjIyZmRkYjY4NjRkZmVkZThjZjJlMTUxMGFjNDkyMzFkYTUwYzNhMWY4MGUyN2FhMjBjYmI2YmNkNDM5NTAwYjBlMmJlYTg2NGM3YjFkOGJmNDRjOGM1MzcwMTIwNWQ1Y2NjMWNiNzc2NTg1NzljM2VmYjdlNGQ1MTcyNWUyNzUwNzEzYWFkMGY4MzY1MTE4YmRmMDM1MWM1MzVmMWVkNmQ4ZTA2NWJhNDM1ZWQ2OTc2Zjg=
+x-access-key: b3Blbl9lZ28=
+oid: osZbM4tRhmejPr1Whv8C6m-jRmgo
+x-tenant-code: 10002
+x-p-version: 1.0.1
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2402030 MicroMessenger/8.0.5 Language/zh_CN webview/
+tenantId: 566622
+x-timestamp: 1740473513395
+x-nonce: GlrBCXFsWBSbtGHE0wtC
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoiMTY3Mzg4NDEwODQ4NjkzMDU2NiIsInRlbmFudENvZGUiOiI1NjY2MjIiLCJhcHBsaWNhdGlvbklkIjoiODIwIiwiZXhwIjoxNzQyMzE1Njc0LCJ1c2VySWQiOiI5Nzc1NjcifQ.YmOhH0xtjuMnIhc3SeSCRbhdMC_TS7SrdRKa8sa0GHY
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://servicewechat.com/wxbbce232a49295d75/devtools/page-frame.html
+Content-Type: application/json;charset=UTF-8
+
+{
+  "activityId": "1875014204193263619",
+  "lat": 31.8512,
+  "lot": 117.26061,
+  "sbiCode": "mpwTOWdjHpj8b53fae7y"
+}
+
+<> 2025-02-26T111932.200.json
+<> 2025-02-26T101036.200.json
+<> 2025-02-26T100837.200.json
+<> 2025-02-26T093631.200.json
+<> 2025-02-25T170635.200.json
+<> 2025-02-25T165345.200.json
+
+###
+
+curl "https://test-byuis.baiyaodajiankang.com/gw-marketing/activity/coupon/findUserCoupons?activityType=red_pack" ^
+  -H "Connection: keep-alive" ^
+  -H "x-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZW5hbnRDb2RlIjoiMTAwMDIiLCJpZCI6IjE4NzE0NDA4NTQwMjgxMjQxNjIiLCJ1c2VyVHlwZSI6ImNvbnN1bWVyIiwiZXhwIjoxNzQwNjM1MDMyfQ.6yi_dHQh95QasQjcQq6eknBaIyN4eGPQTSduGMRyJLQ" ^
+  -H "oenc: 1e1b680ced48354c852fab3a0a6c65d968fc1252fdd32476d2af3c10d9aba78553fc6c894e8d38e4b589eb8345928e43" ^
+  -H "x-c-version: 1.0.0" ^
+  -H "v: v2" ^
+  -H "uid: o2zxB5pC5x14s1DskQQb6lLIqbUA" ^
+  -H "x-sign: YjNmNmZkMzVjNWIzMmRkNmEyMjRiMGNlZTk1MmVlNWU4NzhmNjc2ZTJlZGMzYThkYjg1NjA5OThlZjQ5ZjU5MTU5ZWNlZTU0OGQ1MGQ0OTEwMTllNzRlNzE3NmU1ZWRi" ^
+  -H "x-access-key: b3Blbl9lZ28=" ^
+  -H "oid: osZbM4tRhmejPr1Whv8C6m-jRmgo" ^
+  -H "x-tenant-code: 10002" ^
+  -H "x-p-version: 1.0.1" ^
+  -H "User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.06.2402030 MicroMessenger/8.0.5 Language/zh_CN webview/" ^
+  -H "tenantId: 566622" ^
+  -H "content-type: application/json;charset=UTF-8" ^
+  -H "x-timestamp: 1740548940409" ^
+  -H "x-nonce: S0K1oviKikTDvF4lJzSy" ^
+  -H "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXN0b21lcklkIjoiMTY3Mzg4NDEwODQ4NjkzMDU2NiIsInRlbmFudENvZGUiOiI1NjY2MjIiLCJhcHBsaWNhdGlvbklkIjoiODIwIiwiZXhwIjoxNzQyMzk3MjI4LCJ1c2VySWQiOiI5Nzc1NjcifQ.ViukcA7iJV0VrMyXZLFQouEeceUK58OsQqsGdFJmgmI" ^
+  -H "Accept: */*" ^
+  -H "Sec-Fetch-Site: cross-site" ^
+  -H "Sec-Fetch-Mode: cors" ^
+  -H "Sec-Fetch-Dest: empty" ^
+  -H "Referer: https://servicewechat.com/wx6a6f3cc4740c1652/devtools/page-frame.html" ^
+  --compressed
+
+###
+GET http://localhost:8014/activity/coupon/findUserCoupons?
+    activityType=red_pack
+x-tenant-code: 10002
+x-user-type: consumer
+x-user-id: 1871440854028124162
+
+<> 2025-02-27T140237.200.json
+<> 2025-02-27T140202.200.json
+<> 2025-02-27T135921.200.json
+<> 2025-02-27T135847.200.json
+<> 2025-02-26T155356.200.json
+<> 2025-02-26T155259.200.json
+<> 2025-02-26T155154.200.json
+<> 2025-02-26T153259.200.json
+<> 2025-02-26T153156.200.json
+<> 2025-02-26T153112.200.json
+<> 2025-02-26T152906.200.json
+<> 2025-02-26T152847.200.json
