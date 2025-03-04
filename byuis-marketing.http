@@ -241,8 +241,9 @@ GET http://localhost:8014/activity/coupon/findUserCoupons?
     activityType=red_pack
 x-tenant-code: 10002
 x-user-type: consumer
-x-user-id: 1871440854028124162
+x-user-id: 1824314633905811457
 
+<> 2025-03-03T154306.200.json
 <> 2025-02-27T140237.200.json
 <> 2025-02-27T140202.200.json
 <> 2025-02-27T135921.200.json
