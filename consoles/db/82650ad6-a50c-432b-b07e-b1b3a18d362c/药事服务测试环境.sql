@@ -1,0 +1,1 @@
+INSERT INTO `prescription`.`hospital` (`id`, `hospital_code`, `hospital_name`, `channel_code`, `mobile`, `address`, `receive_default_address`, `package_price`) VALUES (9, '009', '昆明市妇幼保健院', '430734', '', '', 0, 1.50);
