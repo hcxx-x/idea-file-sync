@@ -1,0 +1,20 @@
+###
+GET http://localhost:10100/prescription-info/bindSingleRecord?
+    recipeCode=20250410001&
+    patientName=李测试数据&
+    customerId=123
+
+###
+GET http://localhost:8003/jd/getLoginUrl?
+    activityCode=jdygdj
+employeeNumber: 00239624
+
+<> 2025-04-22T100405.200.json
+<> 2025-04-22T095942.200.json
+<> 2025-04-22T095822.200.json
+
+###
+POST http://localhost:8082/visitor/wechat/getVcode?
+    phoneNum=18913014740
+
+<> 2025-04-22T111424.200.json
