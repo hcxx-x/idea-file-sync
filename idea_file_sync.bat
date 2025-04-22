@@ -14,14 +14,13 @@ echo "pull finished"
 %将文件添加到git管理，提交并推送到远程，提交消息为固定内容加当前时间%
 git add .
 
-
 rem 获取当前时间
 for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyyMMddHHmmss'"') do (
     set "formatted_time=%%a"
 )
 echo 当前时间：%formatted_time%
 
-git commit -m idea_file_sync"%formatted_time%"
+git commit -m idea_file_sync%formatted_time%
 echo "commit finished"
 git push
 %结束%
