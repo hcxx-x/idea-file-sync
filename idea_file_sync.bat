@@ -16,7 +16,7 @@ git add .
 
 
 
-for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"') do (
+for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyyMMddHHmmss'"') do (
     set "formatted_time=%%a"
 )
 echo 当前时间：%formatted_time%
