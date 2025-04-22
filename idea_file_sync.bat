@@ -13,7 +13,7 @@ echo "pull finished"
 %将文件添加到git管理，提交并推送到远程，提交消息为固定内容加当前时间%
 git add .
 set current_time=%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%
-echo '开始提交'
+echo '%current_time%'
 git commit -m "%current_time%"
 echo "commit finished"
 git push
