@@ -15,7 +15,7 @@ echo "pull finished"
 git add .
 
 
-
+rem 获取当前时间
 for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyyMMddHHmmss'"') do (
     set "formatted_time=%%a"
 )
