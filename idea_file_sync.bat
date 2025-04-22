@@ -21,11 +21,7 @@ for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyyMMddHHmmss'
 )
 echo 当前时间：%formatted_time%
 
-
-
-
-echo '%formatted_time%'
-git commit -m "%formatted_time%"
+git commit -m idea_file_sync,"%formatted_time%"
 echo "commit finished"
 git push
 %结束%
