@@ -1,5 +1,4 @@
 @echo off
-setlocal enabledelayedexpansion
 
 echo "开始执行..."
 
@@ -17,21 +16,10 @@ git add .
 
 
 
-rem 使用WMIC命令获取标准化的日期时间
-for /f "skip=1 delims=" %%a in ('wmic os get localdatetime ^| findstr /r [0-9]') do (
-    set "datetime=%%a"
+for /f "delims=" %%a in ('powershell -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"') do (
+    set "formatted_time=%%a"
 )
-
-rem 提取日期时间各部分
-set "year=%datetime:~0,4%"
-set "month=%datetime:~4,2%"
-set "day=%datetime:~6,2%"
-set "hour=%datetime:~8,2%"
-set "minute=%datetime:~10,2%"
-set "second=%datetime:~12,2%"
-
-rem 组合成指定格式
-set "formatted_time=%year%-%month%-%day% %hour%:%minute%:%second%"
+echo 当前时间：%formatted_time%
 
 
 
