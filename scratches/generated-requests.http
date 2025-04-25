@@ -18,3 +18,9 @@ POST http://localhost:8082/visitor/wechat/getVcode?
     phoneNum=18913014740
 
 <> 2025-04-22T111424.200.json
+
+
+###
+GET https://open-oauth.jd.com/oauth2/access_token?app_key=5C1DD1BE440807FF88CC1990F7DBCA0B&app_secret=0853b63bf9d4443e8754e1657ff857a6&grant_type=authorization_code&code=UZPsaj
+
+<> 2025-04-25T143544.200.json
