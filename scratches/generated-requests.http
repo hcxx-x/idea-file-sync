@@ -30,3 +30,16 @@ GET https://open-oauth.jd.com/oauth2/access_token?app_key=5C1DD1BE440807FF88CC19
 GET https://open-oauth.jd.com/oauth2/refresh_token?app_key=5C1DD1BE440807FF88CC1990F7DBCA0B&app_secret=0853b63bf9d4443e8754e1657ff857a6&grant_type=refresh_token&refresh_token=110fb3093540435fb6a4ed0b8787cddemtew
 
 <> 2025-04-25T150120.200.json
+
+###
+GET http://localhost:9000/gw-brand/receiveAddress/receiveAddressPage/1673884108486930566
+
+<> 2025-04-29T140756.401.json
+<> 2025-04-29T140214.401.json
+
+###
+GET https://testlottery.baiyaodajiankang.com/gw-brand/receiveAddress/receiveAddressPage/1673884108486930566
+
+<> 2025-04-29T145322.401.json
+<> 2025-04-29T140639.200.json
+<> 2025-04-29T140422.200.json
