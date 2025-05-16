@@ -141,3 +141,18 @@ WHERE (phone = '13625655981' AND source_type = 8);
 SELECT phone
 FROM md_user
 WHERE (phone = '13625655981' AND source_type = 8);
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info pi where pi.hospital_code=1001 order by id desc;
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info pi where pi.hospital_code='sz' order by id desc;
+;-- -. . -..- - / . -. - .-. -.--
+select * from hospital;
+;-- -. . -..- - / . -. - .-. -.--
+update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
+                         where recipe_code in ('20250429029','20250429027');
+;-- -. . -..- - / . -. - .-. -.--
+update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
+                         ,create_time=now()
+                         where recipe_code in ('20250429029','20250429027');
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info pi where pi.hospital_code='SZ' order by id desc;
