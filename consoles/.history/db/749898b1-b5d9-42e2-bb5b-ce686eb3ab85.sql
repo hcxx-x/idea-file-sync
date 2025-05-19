@@ -151,13 +151,9 @@ update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_t
 ;-- -. . -..- - / . -. - .-. -.--
 select * from prescription_info pi where pi.hospital_code='SZ' order by id desc;
 ;-- -. . -..- - / . -. - .-. -.--
-select * from prescription_info pi where pi.hospital_code like '1001%' order by id desc;
-;-- -. . -..- - / . -. - .-. -.--
 update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
                          ,create_time=now()
                          where recipe_code in ('20250429029','20250429027');
-;-- -. . -..- - / . -. - .-. -.--
-select * from hospital;
 ;-- -. . -..- - / . -. - .-. -.--
 select * from prescription_info pi where pi.hospital_code like '009%' order by id desc;
 ;-- -. . -..- - / . -. - .-. -.--
@@ -174,3 +170,23 @@ select * from prescription_info pi where pi.hospital_code like 'SZ%' order by id
 update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
                            ,create_time=now()
 where bill_id in ('20240614005');
+;-- -. . -..- - / . -. - .-. -.--
+update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
+                           ,create_time='2099-01-01'
+where bill_id in ('20250429020','20250429021');
+;-- -. . -..- - / . -. - .-. -.--
+select * from hospital;
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info pi where pi.hospital_code like '1001%' order by id desc;
+;-- -. . -..- - / . -. - .-. -.--
+update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
+                           ,create_time='2099-01-01'
+where bill_id in ('20240614005');
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info where bill_id in ('20240614005');
+;-- -. . -..- - / . -. - .-. -.--
+update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_type=null,delivery_status=null,pay_status=0
+                         ,create_time='2099-01-01'
+                         where recipe_code in ('20250429029','20250429027');
+;-- -. . -..- - / . -. - .-. -.--
+select * from prescription_info where recipe_code in ('20250429029','20250429027');
