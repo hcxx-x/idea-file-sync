@@ -2,3 +2,6 @@ alter table trade_role_setting add column status varchar(16) default null commen
 
 
 select * from d16_t_gl_balances where com_code='01' and inter_code in ('02','06') limit 1;
+
+
+select * from trade_role_setting trs left join base_biz_entity bbe on trs.biz_entity_code = bbe.biz_entity_code
