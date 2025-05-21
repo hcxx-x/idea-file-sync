@@ -1,6 +1,7 @@
 ###
 GET http://localhost:10100/prescription-inf
-Content-Type: application/jsono/bindSingleRecord?
+Content-Type:
+Content-Type: application/x-www-form-urlencodedapplication/jsono/bindSingleRecord?
     recipeCode=20250410001&
     patientName=李测试数据&
     customerId=123
