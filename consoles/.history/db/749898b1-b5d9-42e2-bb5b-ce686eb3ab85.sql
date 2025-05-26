@@ -190,3 +190,5 @@ update prescription_info set commit=0,auto_fill=null,customer_id=null,delivery_t
                          where recipe_code in ('20250429029','20250429027');
 ;-- -. . -..- - / . -. - .-. -.--
 select * from prescription_info where recipe_code in ('20250429029','20250429027');
+;-- -. . -..- - / . -. - .-. -.--
+alter table hospital add column hospital_to_home varchar(2) default 'N' comment '住院处方是否配送到家 N:不，Y:配送';
