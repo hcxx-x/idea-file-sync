@@ -5,3 +5,7 @@ select * from d16_t_gl_balances where com_code='01' and inter_code in ('02','06'
 
 
 select * from trade_role_setting trs left join base_biz_entity bbe on trs.biz_entity_code = bbe.biz_entity_code
+
+
+
+SELECT id,product_code,product_name,product_first_category,product_sec_category,product_third_category,product_type,production_entity,product_line,trade_subject,maintain_name,create_time,update_time FROM base_product_line WHERE (product_code IS NOT NULL and product_code <> '')

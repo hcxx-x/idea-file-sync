@@ -23,3 +23,7 @@ select * from trade_role_setting trs left join base_biz_entity bbe on trs.biz_en
 select trs.id,bbe.id,trs.rule_code,trs.biz_entity_code,bbe.biz_entity_name bizEntityName,bbe.vat_entity_name vatEntityName,
        trs.opp_entity_code,trs.trade_subject,trs.trade_role,trs.status,trs.review_status,trs.start_time,trs.end_time,
        trs.maintain_name from trade_role_setting trs left join base_biz_entity bbe on trs.biz_entity_code = bbe.biz_entity_code;
+;-- -. . -..- - / . -. - .-. -.--
+SELECT id,product_code,product_name,product_first_category,product_sec_category,product_third_category,product_type,production_entity,product_line,trade_subject,maintain_name,create_time,update_time FROM base_product_line WHERE (product_code IS NOT NULL OR product_code <> '');
+;-- -. . -..- - / . -. - .-. -.--
+SELECT id,product_code,product_name,product_first_category,product_sec_category,product_third_category,product_type,production_entity,product_line,trade_subject,maintain_name,create_time,update_time FROM base_product_line WHERE (product_code IS NOT NULL and product_code <> '');
