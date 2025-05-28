@@ -12,4 +12,4 @@ SELECT id,product_code,product_name,product_first_category,product_sec_category,
 
 
 
-select count(1) from d16_t_gl_balances where com_code='06' and recogn_flag is not null  and recogn_flag !='I'
+select count(1) from d16_t_gl_balances where com_code='06' and  recogn_flag ='I'

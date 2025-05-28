@@ -29,3 +29,5 @@ SELECT id,product_code,product_name,product_first_category,product_sec_category,
 SELECT id,product_code,product_name,product_first_category,product_sec_category,product_third_category,product_type,production_entity,product_line,trade_subject,maintain_name,create_time,update_time FROM base_product_line WHERE (product_code IS NOT NULL and product_code <> '');
 ;-- -. . -..- - / . -. - .-. -.--
 select count(1) from d16_t_gl_balances where com_code='06' and recogn_flag is not null  and recogn_flag !='I';
+;-- -. . -..- - / . -. - .-. -.--
+select count(1) from d16_t_gl_balances where com_code='06' and  recogn_flag ='I';
