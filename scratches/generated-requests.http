@@ -1,6 +1,7 @@
 ###
 GET http://localhost:10100/prescription-inf
-Content
+Conten
+Content-Type: application/jsont
 Content-Type: application/json-Type:
 Content-Type: application/x-www-form-urlencodedapplication/jsono/bindSingleRecord?
     recipeCode=20250410001&
