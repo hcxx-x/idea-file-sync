@@ -31,3 +31,151 @@ SELECT id,product_code,product_name,product_first_category,product_sec_category,
 select count(1) from d16_t_gl_balances where com_code='06' and recogn_flag is not null  and recogn_flag !='I';
 ;-- -. . -..- - / . -. - .-. -.--
 select count(1) from d16_t_gl_balances where com_code='06' and  recogn_flag ='I';
+;-- -. . -..- - / . -. - .-. -.--
+select * from (
+                  (select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentCount,
+                      (select count(distinct inter_entity_code)
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as lastPeriodCount
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select currentPeriodCount,currentPeriodCount-lastPeriodCount as increment from (
+                  (select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentPeriodCount,
+                      (select count(distinct inter_entity_code)
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as lastPeriodCount
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select
+                  (select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentPeriodCount,
+                      (select count(distinct inter_entity_code)
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as lastPeriodCount
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentPeriodCount;
+;-- -. . -..- - / . -. - .-. -.--
+select (
+                  (select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentPeriodCount,
+
+                      (select count(distinct inter_entity_code)
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as lastPeriodCount
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select * from (
+                  (select count(distinct inter_entity_code)
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as currentPeriodCount,
+
+                      (select count(distinct inter_entity_code)
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as lastPeriodCount
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select * from (
+                  (select count(distinct inter_entity_code) as currentPeriodCount
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) ,
+
+                      (select count(distinct inter_entity_code)  as lastPeriodCount
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0)
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select * from (
+                  (select count(distinct inter_entity_code) as currentPeriodCount
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as t1 ,
+
+                      (select count(distinct inter_entity_code)  as lastPeriodCount
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as t2
+                  );
+;-- -. . -..- - / . -. - .-. -.--
+select currentPeriodCount,currentPeriodCount-lastPeriodCount as increment from (
+    select * from (
+                  (select count(distinct inter_entity_code) as currentPeriodCount
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as t1 ,
+
+                      (select count(distinct inter_entity_code)  as lastPeriodCount
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as t2
+                  )
+    );
+;-- -. . -..- - / . -. - .-. -.--
+select currentPeriodCount,currentPeriodCount-lastPeriodCount as increment from (
+    select * from (
+                  (select count(distinct inter_entity_code) as currentPeriodCount
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as t1 ,
+
+                      (select count(distinct inter_entity_code)  as lastPeriodCount
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as t2
+                  )
+    ) t2;
+;-- -. . -..- - / . -. - .-. -.--
+select currentPeriodCount,currentPeriodCount-lastPeriodCount as increment from (
+
+                  (select count(distinct inter_entity_code) as currentPeriodCount
+                   from report_trade_detail
+                   where period_name between '2020-01' and '2020-06'
+                     and biz_entity_code = '01'
+                     and revenue_operating != 0) as t1 ,
+
+                      (select count(distinct inter_entity_code)  as lastPeriodCount
+                       from report_trade_detail
+                       where period_name between '2020-01' and '2020-05'
+                         and biz_entity_code = '01'
+                         and revenue_operating != 0) as t2
+                  );
